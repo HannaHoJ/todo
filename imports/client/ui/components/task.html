@@ -1,0 +1,11 @@
+<template name="component_task">
+	<div contenteditable="true" class="component_task">
+		<li class="task-item">
+			<div class="task">{{ task }}</div>
+			<div class="deadline">Deadline: {{ deadline }}</div>
+			<div class="progress"> {{ progress }} %</div>
+			<a href="#" class="btn btn-info "><span class="glyphicon glyphicon-pencil">edit</span></a>
+			<a href="#" class="btn btn-danger btn-delete"><span class="glyphicon glyphicon-trash">trash</span></a>
+		</li>
+	</div>
+</template>

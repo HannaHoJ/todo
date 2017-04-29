@@ -1,0 +1,14 @@
+<template name="page_edit_task">
+	<div class="page_edit_task">
+		<div class="container-fluid">
+			<div class="title">Please edit the task</div>
+			<form action="edit_task">
+				<textarea name="new-task" cols="40" rows="5" placeholder="write new task"></textarea>
+				<!-- <input type="text" name="new-task" placeholder="write new task"> -->
+				<input type="text" name="deadline" placeholder="enter deadline">
+				<input type="text" name="progress" placeholder="enter progress">
+				<input type="submit" value="save task">
+			</form>
+		</div>
+	</div>
+</template>

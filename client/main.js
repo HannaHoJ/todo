@@ -1,9 +1,7 @@
-import React from 'react';
-import { Meteor } from 'meteor/meteor';
-import { render } from 'react-dom';
-import Main_list from '../imports/client/ui/pages/Main_list';
+import '../imports/client/routing/routes';
+import '../imports/client/ui/components/task';
 
-
-Meteor.startup( () => {
-	render( <Main_list />, document.getElementById('render-target'));
-});
+import '../imports/client/ui/pages/create_task';
+import '../imports/client/ui/pages/edit_task';
+import '../imports/client/ui/pages/list.js';
+import '../imports/client/ui/pages/impressum';

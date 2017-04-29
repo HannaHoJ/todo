@@ -1,0 +1,16 @@
+<template name="page_list">
+	<div class="page_list">
+		<div class="container-fluid">
+			<div class="col-xs-12">
+				<div class="well well-quote">
+					<h3>Today's toDo List!</h3>
+					<ul class="task-list">
+						{{#each taskItem }}
+							{{> component_task }}
+						{{/each}}
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</template>
