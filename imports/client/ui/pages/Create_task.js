@@ -1,17 +1,29 @@
-import React from 'react';
-import { Component } from 'react';
-import { PropTypes } from 'react';
+import { Template } from 'meteor/templating';
+import { Meteor } from 'meteor/meteor';
+import './create_task.html';
 
-export default class Task extends Component {
-  render() {
-    return (
-      <li>{this.props.task.text}</li>
-    );
-  }
-}
- 
-Task.propTypes = {
-  // This component gets the task to display through a React prop.
-  // We can use propTypes to indicate it is required
-  task: PropTypes.object.isRequired,
-};
+const template = Template.component_task;
+
+template.events({
+    'submit. submit-task': function(event, instance) {
+        // Prevent default browser form submit
+        event.preventDefault();
+        let task = event.target.task.value;
+        let deadline = event.target.deadline.value;
+        let progress = event.target.progress.value;
+
+        // Insert a product into the collection
+        Meteor.call('tasks.insert', task, deadline, progress, function(error, result) {
+            if (error) {
+                console.log("error");
+                alert("the insertion failed!");
+            } else {
+                console.log("result");
+            }
+        });
+
+        event.target.task.value = "";
+        event.target.deadline.value = "";
+        event.target.progress.value = "";
+    }
+});
