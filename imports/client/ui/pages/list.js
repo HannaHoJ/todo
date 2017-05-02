@@ -15,7 +15,7 @@ template.onCreated(function(){
 
 template.helpers({
 	'taskItem': function() {
-		const tasks = Tasks.find({}, {sort: { createdAt: -1} } );
+		const tasks = Tasks.find({}, {sort: { createdAt: -1} } ).fetch();
 		console.log('tasks: ' + tasks);
 		return tasks;
 	}
