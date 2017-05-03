@@ -17,5 +17,10 @@ Meteor.methods({
 
     },
 
+    'tasks.remove': function(taskId){
+        check(taskId, String);
+        Tasks.remove(taskId);
+    },
+
 })
 

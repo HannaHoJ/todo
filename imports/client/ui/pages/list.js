@@ -15,10 +15,15 @@ template.onCreated(function(){
 
 template.helpers({
 	'taskItem': function() {
-		const tasks = Tasks.find({}, {sort: { createdAt: -1} } ).fetch();
+		const tasks = Tasks.find({}, {sort: { deadline: 1} } ).fetch();
 		console.log('tasks: ' + tasks);
 		return tasks;
 	}
+
+});
+
+template.events({
+	
 
 });
 
