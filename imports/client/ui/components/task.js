@@ -1,5 +1,6 @@
 import { Template } from 'meteor/templating';
 import { Meteor } from 'meteor/meteor';
+import { Tasks } from '/imports/collections/tasks.js';
 
 import './task.html';
 
@@ -20,6 +21,7 @@ template.events({
 
 	'click .btn-edit': function(event, instance){
 		event.preventDefault();
+		// var editItem = Tasks.findOne({ instance.data._id } );
 		Router.go('edit-task', {});
 	}
 

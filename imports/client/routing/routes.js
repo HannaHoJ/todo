@@ -6,7 +6,7 @@ Router.route('/', {
 });
 
 Router.route('/create-task', {
-	name: 'create-tasks',
+	name: 'create-task',
 	template: 'page_create_task'
 });
 
@@ -15,7 +15,6 @@ Router.route('/edit-task', {
 	template: 'page_edit_task'
 });
 
-Router.route('/impressum', {
-	name: 'impressum',
-	template: 'page_impressum'
+Router.configure({
+	layoutTemplate: 'component_context'
 });

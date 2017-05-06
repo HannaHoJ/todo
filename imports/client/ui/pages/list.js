@@ -24,6 +24,7 @@ template.helpers({
 
 template.events({
 	
+	
 
 });
 
