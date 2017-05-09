@@ -17,5 +17,25 @@ Meteor.methods({
 
     },
 
+    'tasks.update': function(taskId, task, deadline, progress){
+        check(taskId, String);
+        check(task, String);
+        check(deadline, String);
+        check(progress, String);
+        console.log('updating Task');
+        var updatedItem = {
+            task: task,
+            deadline: deadline,
+            progress: progress,
+        };
+        
+        Tasks.update({ _id: taskId }, { $set: updatedItem } );
+    },
+
+    'tasks.remove': function(taskId){
+        check(taskId, String);
+        Tasks.remove(taskId);
+    },
+
 })
 
