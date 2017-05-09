@@ -22,9 +22,5 @@ template.helpers({
 
 });
 
-template.events({
-	
-	
 
-});
 

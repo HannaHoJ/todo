@@ -1,16 +1,24 @@
 <template name="component_task">
     <div class="component_task">
-        <div class="task">
-            <label for="task">{{ task }}</label>
-        </div>
-        <div class="deadline">
-            <label for="deadline">deadline</label> {{ deadline }}</div>
-        <div class="progress">
-            <div class="progress-bar" role="progressbar" aria-valuenow="{{ progress }}" aria-valuemin="0" aria-valuemax="100" style="min-width: 2em; width: {{ progress }}%;">
-                {{ progress }}%
+        <div class="container-fluid">
+            <div class="row-fuid">
+                <div class="task col-xs-12">
+                    <label for="task">{{ task }}</label>
+                </div>
+                <div class="deadline col-xs-12">
+                    <label for="deadline">deadline</label> {{ deadline }}</div>
+                <div class="progress col-xs-12">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="{{ progress }}" aria-valuemin="0" aria-valuemax="100" style="background-color:purple; min-width: 2em; width: {{ progress }}%;">
+                        {{ progress }}%
+                    </div>
+                </div>
+                <div class="col-xs-6">
+                    <a href="{{ pathFor 'edit-task' }}" class="btn btn-info btn-block btn-edit"><span class="glyphicon glyphicon-pencil"></span></a>
+                </div>
+                <div class="col-xs-6">
+                    <a href="#" class="btn btn-danger btn-block btn-delete"><span class="glyphicon glyphicon-trash"></span></a>
+                </div>
             </div>
         </div>
-        <a href="#" class="btn btn-info btn-edit"><span class="glyphicon glyphicon-pencil">edit</span></a>
-        <a href="#" class="btn btn-danger btn-delete"><span class="glyphicon glyphicon-trash">trash</span></a>
     </div>
 </template>
