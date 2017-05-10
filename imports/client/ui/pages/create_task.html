@@ -1,10 +1,12 @@
 <template name="page_create_task">
     <div class="page_create_task">
         <div class="container-fluid">
-            <div class="page-header">
-                <h1 class="title">Lets create a Task</h1>
-            </div>
             <div class="row-fluid">
+                <div class="col-md-12">
+                    <div class="page-header">
+                        <h1 class="title">Lets create a Task</h1>
+                    </div>
+                </div>
                 <form action="submit-task" class="submit-task">
                     <!-- <textarea name="new-task" cols="40" rows="5" placeholder="write new task"></textarea><br> -->
                     <div class="col-md-12">
@@ -18,14 +20,14 @@
                         <label for="deadline">Your deadline</label>
                         <div class="input-group">
                             <span class="input-group-addon">DD.MM.YYYY</span>
-                            <input type="date" data-fv-date-format="DD/MM/YYYY"  class="form-control" value="{{ name }}" name="deadline">
+                            <input type="date" data-fv-date-format="DD/MM/YYYY" class="form-control" value="{{ name }}" name="deadline">
                         </div>
                     </div>
                     <div class="col-md-6">
                         <label for="progress">Your progress</label>
                         <div class="input-group">
                             <span class="input-group-addon">%</span>
-                            <input type="number" class="form-control"  value="{{ name }}" name="progress" placeholder="progress">
+                            <input type="number" class="form-control" value="{{ name }}" name="progress" placeholder="progress">
                         </div>
                     </div>
                     <div class="col-md-12">

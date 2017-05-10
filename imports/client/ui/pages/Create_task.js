@@ -26,5 +26,7 @@ template.events({
         event.target.task.value = "";
         event.target.deadline.value = "";
         event.target.progress.value = "";
+
+        Router.go('list');
     },
 });

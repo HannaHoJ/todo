@@ -1,9 +1,14 @@
 <template name="component_impressum">
     <div class="container-fluid">
         <div class="page-footer">
-            <h3 class="impressum">Impressum</h3></div>
-        <div class="h-m">Hendrik Meyer</div>
-        <div class="m-o">Matthias Oertel</div>
-        <div class="j-d">Johanna Dietz</div>
+            <div class="row-fluid">
+                <div class="col-xs-8">
+                    @2017. All rights reserved.
+                </div>
+                <div class="pull-right">
+                    <a href="{{ pathFor 'impressum'}}">Impressum</a>
+                </div>
+            </div>
+        </div>
     </div>
 </template>

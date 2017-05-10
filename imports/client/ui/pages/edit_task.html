@@ -1,10 +1,12 @@
 <template name="page_edit_task">
     <div class="page_edit_task">
         <div class="container-fluid">
-            <div class="page-header">
-                <h1 class="title">Edit the Task</h1>
-            </div>
             <div class="row-fluid">
+                <div class="col-sm-12">
+                    <div class="page-header">
+                        <h1 class="title">Edit the Task</h1>
+                    </div>
+                </div>
                 {{ #with editItem }}
                 <form action="submit-task" class="submit-editedTask">
                     <!-- <textarea name="new-task" cols="40" rows="5" placeholder="write new task"></textarea><br> -->

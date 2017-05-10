@@ -21,6 +21,11 @@ Router.route('/edit-task/:_id', {
 		}
 });
 
+Router.route('/impressum', {
+	name: 'impressum',
+	template: 'page_impressum'
+})
+
 Router.configure({
 	layoutTemplate: 'component_context'
 });
