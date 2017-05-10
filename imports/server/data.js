@@ -1,6 +1,6 @@
 import { Tasks } from '/imports/collections/tasks.js';
 
-console.log("task script");
+console.log("task scripts");
 
 if (Tasks.find({}).count() === 0) {
     const tasks = [{
