@@ -24,6 +24,8 @@ Enthält grundsätzliche htlm-Komponenten und js-Methoden für die Web-App:
 * Navigationsmenü
 * Impressumsmenü
 * die Entity Tasks
+## imports/server
+Enthält js-Methoden zur Ausführung auf dem Server
 ## import/client/routing/routes.js
 Routing table, die verschiedenen URLs das zugehörige Template zuweist.
 ## package.json
