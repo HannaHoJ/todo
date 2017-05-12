@@ -6,7 +6,7 @@ Als Datenbank wird MongoDB (auch js) benutzt.
 1. Im Terminal im Order todo 'meteor' in die Konsole tippen. Damit werden alle Packages geladen und der Server gestartet.
 1. Im Browser unter 'localhost:3000' wird die App nun angezeigt.
 
-# Grundlegender Aufbau der App
+# Grundlegender Aufbau der Implementierung
 ## client/main.js
 js-Zugangspunkt, der auf dem Client geladen wird.
 ## server/main.js
