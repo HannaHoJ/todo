@@ -15,10 +15,10 @@
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
-                        <li class="{{ activeIfTemplate 'page_list' }}">
+                        <li class="nav-list {{ activeIfTemplate 'page_list' }}">
                             <a href="{{ pathFor 'list'}}">TODO List</a>
                         </li>
-                        <li class="{{ activeIfTemplate 'page_create_task' }} ">
+                        <li class="nav-create-task {{ activeIfTemplate 'page_create_task' }} ">
                             <a href="{{pathFor 'create-task'}}">Create Task</a>
                         </li>
                     </ul>
